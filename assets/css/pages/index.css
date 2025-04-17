@@ -14,13 +14,13 @@ main {
     display: none;
 }
 
+/* Card Login */
 .login {
     background: var(--clr-light-blue);
     border-radius: 1rem 1rem 0 0;
     padding: 1.5rem;
     width: 100%;
     height: 75vh;
-    box-shadow: 0 4px 20px var(--clr-dark);
     text-align: center;
 }
 
@@ -30,6 +30,7 @@ main {
     margin-top: 1rem;
 }
 
+/* Formulario Login */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@ main {
 
 .login-form-input {
     border: none;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid var(--clr-grey);
     background: transparent;
     padding: 0.75rem 0;
     outline: none;
@@ -54,6 +55,7 @@ main {
     border-bottom: 2px solid var(--clr-dark-blue);
 }
 
+/* Esqueceu sua senha? */
 .input-forgot {
     text-align: right;
     margin-top: -0.5rem;
@@ -62,7 +64,7 @@ main {
 
 .input-forgot a {
     font-size: var(--fs-small);
-    color: #555;
+    color: var(--clr-grey);
     text-decoration: none;
 }
 
@@ -70,6 +72,7 @@ main {
     color: var(--clr-blue);
 }
 
+/* Submit */
 .login-form button {
     background-color: var(--clr-blue);
     color: var(--clr-white);
@@ -86,6 +89,7 @@ main {
     background-color: var(--clr-dark-blue);
 }
 
+/* Como realizar o acesso */
 .access {
     display: flex;
     flex-direction: column;
@@ -96,7 +100,7 @@ main {
 
 .access p {
     font-size: var(--fs-small);
-    color: #555;
+    color: var(--clr-grey);
     margin-bottom: 0.5rem;
 }
 
@@ -116,6 +120,102 @@ main {
     color: var(--clr-white);
 }
 
+/* Instruções para o acesso */
+.info-access {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.info-access::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--clr-black);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.info-access.show{
+    bottom: 0;
+}
+
+/* Card com as instruções */
+.info-access-content {
+    max-width: 550px;
+    width: 90%;
+    background: var(--clr-light-blue);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: var(--fs-small);
+}
+
+.info-access-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-gradient-blue);
+    padding: 1rem 1.2rem;
+    color: var(--clr-light-blue);
+}
+
+.info-access-header h2 {
+    margin: 0;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+}
+
+.info-access-header button {
+    background: none;
+    border: none;
+    color: var(--clr-white);
+    font-size: var(--fs-button);
+    cursor: pointer;
+}
+
+.info-access-body {
+    padding: 1.2rem;
+    line-height: 1.8;
+}
+
+.info-access-body ul {
+    margin: .8rem 0 1.1rem;
+    padding-left: 1.3rem;
+}
+
+.info-access-body li {
+    margin-bottom: 8px;
+}
+
+.info-access-footer {
+    padding: 1rem 1.2rem;
+    background-color: var(--clr-light-blue);
+    text-align: center;
+}
+
+.info-access-footer a {
+    display: inline-block;
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.info-access-footer a:hover {
+    background-color: var(--clr-dark-blue);
+}
+
+/* Medias */
 @media screen and (min-width: 610px) {
     main {
         justify-content: center;

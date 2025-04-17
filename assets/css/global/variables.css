@@ -33,6 +33,7 @@
 
     /* COR TERCIÁRIA */ 
     --clr-green: #16D090;
+    --clr-grey: #555;
 
     /* GRADIENTES */
     --clr-gradient-blue: linear-gradient(to left, var(--clr-blue) 0%, var(--clr-dark-blue) 100%); 

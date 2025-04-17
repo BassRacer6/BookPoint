@@ -8,6 +8,11 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/bookpoint-logo.png">
     <link rel="stylesheet" href="./assets/css/pages/index.css">
+
+    <!--CDN com os icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,12 +25,15 @@
             <img src="./assets/images/bookpoint-logo.png" alt="Bookpoint logo">
 
             <form action="#" method="post" class="login-form">
-                    <input type="email" name="email" placeholder="Login (RA)" aria-label="Insira seu RA" class="login-form-input">
-                    <input type="password" name="password" placeholder="Insira sua senha" aria-label="Insira sua senha" class="login-form-input">
+                <input type="email" name="email" placeholder="Login (RA)" aria-label="Insira seu RA"
+                    class="login-form-input">
+                <input type="password" name="password" placeholder="Insira sua senha" aria-label="Insira sua senha"
+                    class="login-form-input">
 
-                    <div class="input-forgot">
-                        <a href="#">Esqueceu sua senha?</a>
-                    </div>
+                <div class="input-forgot">
+                    <a href="https://trocasenha.animaeducacao.com.br/EsqueciMinhaSenha/Index" target="_blank"
+                        rel="noopener noreferrer">Esqueceu sua senha?</a>
+                </div>
 
                 <button type="submit" aria-label="Fazer login com RA e senha">
                     LOGIN
@@ -35,10 +43,44 @@
             <section class="access">
                 <p>Calouros e ex-alunos</p>
 
-                <button type="button" aria-label="Saiba como realizar o acesso como calouro ou ex-aluno">
+                <button type="button" aria-label="Saiba como realizar o acesso como calouro ou ex-aluno" id="btnAcesso">
                     COMO REALIZAR O ACESSO
                 </button>
             </section>
+        </article>
+
+        <article class="info-access" inert>
+            <div class="info-access-content">
+                <header class="info-access-header">
+                    <h2 class="white-text">Orientações para realizar o acesso</h2>
+                    <button type="button" aria-label="Fechar orientações">
+                        <i class="fa-solid fa-xmark closeBox"></i>
+                    </button>
+                </header>
+
+                <div class="info-access-body">
+                    <p>Para acessar, use seu e-mail @ulife.com.br e senha.</p>
+                    <p>Formatos de e-mail por perfil:</p>
+                    <ul>
+                        <li><strong>Presencial, Semipresencial e Live:</strong> numerodoRA@ulife.com.br</li>
+                        <li><strong>EAD:</strong> CPF@ulife.com.br</li>
+                        <li><strong>Docentes:</strong> usuario@ulife.com.br</li>
+                    </ul>
+
+                    <p>Se não souber seu RA ou esqueceu a senha, clique em <strong>Cadastrar nova senha</strong>.</p>
+
+                    <p>Na próxima página, informe seu login ou CPF. Um e-mail com instruções será enviado para o e-mail cadastrado na matrícula.</p>
+
+                    <p>Depois, volte à tela de login e acesse com a nova senha.</p>
+                </div>
+
+                <footer class="info-access-footer">
+                    <a href="https://trocasenha.animaeducacao.com.br/EsqueciMinhaSenha/Index" target="_blank"
+                        rel="noopener noreferrer">
+                        Cadastrar nova senha
+                    </a>
+                </footer>
+            </div>
         </article>
     </main>
 
