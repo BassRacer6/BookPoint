@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+   /* FONTS */  
+    --montserrat: "Montserrat", sans-serif;
+    --fs-body: clamp(.8rem, 4vw, 1rem);
+
+    /* FONTS SIZE */ 
+    
+    --fs-title: clamp(1.5rem, 4vw, 1.8rem);
+    --fs-subtitle: clamp(1.3rem, 3.8vw, 1.6rem);
+    --fs-small: clamp(.8rem, 4vw, .9rem);
+    --fs-button: clamp(1rem, 3.8vw, 1.3rem);
+
+    /* FONTS WEIGHT */ 
+    --fw-bold: bold;
+    --fw-700: 700;
+    --fw-400: 400;
+
+    /* BLACK & WHITE */ 
+    --clr-black: rgb(0, 0, 0);
+    --clr-white: rgb(255, 255, 255);
+
+    /* COR PRIMÁRIA */ 
+    --clr-light-blue: #F5F5F5;
+    --clr-semilight-blue: #A9C1FD;
+    --clr-blue: #558EFF;
+    --clr-dark-blue: #1F58E7;
+
+    /* COR SECUNDÁRIA */ 
+    --clr-light-red: #FF6760;
+    --clr-red: #E74F48;
+
+    /* COR TERCIÁRIA */ 
+    --clr-green: #16D090;
+
+    /* GRADIENTES */
+    --clr-gradient-blue: linear-gradient(to left, var(--clr-blue) 0%, var(--clr-dark-blue) 100%); 
+
+}
